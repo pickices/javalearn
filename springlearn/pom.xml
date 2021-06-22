@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>com.liuxinchi</groupId>
+
+
+    <artifactId>springlearn</artifactId>
+
+
+    <version>1.0-SNAPSHOT</version>
+
+
+    <packaging>pom</packaging>
+
+
+    <dependencies>
+
+        <dependency>
+
+
+            <groupId>junit</groupId>
+
+
+            <artifactId>junit</artifactId>
+
+
+            <version>4.11</version>
+
+
+            <scope>test</scope>
+
+
+        </dependency>
+
+
+        <dependency>
+
+
+            <groupId>org.springframework</groupId>
+
+
+            <artifactId>spring-webmvc</artifactId>
+
+
+            <version>5.3.5</version>
+
+
+        </dependency>
+
+
+    </dependencies>
+
+
+    <modules>
+
+
+        <module>spring-ioc1</module>
+
+
+        <module>sping-hello</module>
+
+
+        <module>spring-ioc2</module>
+
+
+        <module>spring-di</module>
+
+
+        <module>spring-autowired</module>
+
+
+        <module>spring-anno</module>
+
+
+        <module>spring-appconfig</module>
+
+
+        <module>spring-proxy</module>
+
+
+        <module>spring-aop</module>
+        <module>spring-mybatis</module>
+        <module>spring-transaction</module>
+
+    </modules>
+</project>

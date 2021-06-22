@@ -1,0 +1,6 @@
+mybatis:
+  type-aliases-package: com.liuxinchi.springboot04shiro.pojo
+  mapper-locations: classpath:mapper/*
+spring:
+  profiles:
+    active: db

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuxinchi.dao.provider.ProviderDao">
+
+    <select id="queryProviderList" resultType="provider">
+    select * from smbms.smbms_provider
+        <where>
+            <if test="proName!=null and proName!=''">
+                proName like "%"#{proName}"%"
+            </if>
+            <if test="proCode!=null and proCode!=''">
+                and proCode like "%"#{proCode}"%"
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertProvider" parameterType="provider">
+        insert into smbms.smbms_provider(smbms.smbms_provider.proCode, smbms.smbms_provider.proName, smbms.smbms_provider.proDesc, smbms.smbms_provider.proContact, smbms.smbms_provider.proPhone, smbms.smbms_provider.proAddress, smbms.smbms_provider.proFax, smbms.smbms_provider.createdBy, smbms.smbms_provider.creationDate)
+        values (#{proCode},#{proName},#{proDesc},#{proContact},#{proPhone},#{proAddress},#{proFax},#{createdBy},#{creationDate})
+    </insert>
+</mapper>

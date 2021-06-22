@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-proxy" />
+        <module name="mybatis-03" />
+        <module name="mybatis-04" />
+        <module name="mybatis-05" />
+        <module name="thread-create" />
+        <module name="mybatis-01" />
+        <module name="thread-syn" />
+        <module name="javaweb-05-filter" />
+        <module name="springboot-05-swagger" />
+        <module name="spring-mybatis" />
+        <module name="springboot" />
+        <module name="juc-01-spurious_wakeup" />
+        <module name="spring-appconfig" />
+        <module name="javaweb-06-smbms" />
+        <module name="springmvc-01-hellomvc" />
+        <module name="spring-ioc1" />
+        <module name="spring-aop" />
+        <module name="spring-ioc2" />
+        <module name="spring-03-web" />
+        <module name="springmvc-04-json" />
+        <module name="springmvc-06-smbms" />
+        <module name="jvm" />
+        <module name="mybatis-10" />
+        <module name="spring-anno" />
+        <module name="springmvc-02-annotation" />
+        <module name="springboot-06-zookeeper_dobbo_provider" />
+        <module name="springmvc-05-ssmbuild" />
+        <module name="springboot-01-hello" />
+        <module name="leetcode" />
+        <module name="springboot-03-web" />
+        <module name="spring-autowired" />
+        <module name="javaweb-01-servlet" />
+        <module name="sping-hello" />
+        <module name="spring-transaction" />
+        <module name="springboot-06-zookeeper-dobbo-consumer" />
+        <module name="javaweb-02-servletcontext" />
+        <module name="mabatis-02" />
+        <module name="spring-di" />
+        <module name="javaweb-03-response" />
+        <module name="springboot-04-shiro" />
+        <module name="springmvc-03-controller" />
+        <module name="springboot-02-config" />
+        <module name="mybatis-06" />
+        <module name="javaweb-04-session" />
+        <module name="mybatis-07" />
+        <module name="mybatis-08" />
+        <module name="mybatis-09" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-01-servlet" target="11" />
+      <module name="javalearn" target="11" />
+      <module name="javaweb-03-session" target="1.7" />
+      <module name="spring-03-web" target="11" />
+      <module name="springmvc-03-annotation" target="11" />
+      <module name="spurious wakeup" target="11" />
+      <module name="untitled" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-03-web" options="-parameters" />
+      <module name="springboot-01-hello" options="-parameters" />
+      <module name="springboot-02-config" options="-parameters" />
+      <module name="springboot-03-web" options="-parameters" />
+      <module name="springboot-04-shiro" options="-parameters" />
+      <module name="springboot-05-swagger" options="-parameters" />
+      <module name="springboot-06-zookeeper-dobbo-consumer" options="-parameters" />
+      <module name="springboot-06-zookeeper_dobbo_provider" options="-parameters" />
+    </option>
+  </component>
+</project>

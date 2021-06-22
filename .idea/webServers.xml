@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6be71e3d-5f67-4b27-8ddc-c6a1b43ae1c5" name="backend1">
+        <fileTransfer rootFolder="/home/liuxinchi" accessType="SFTP" host="192.168.232.101" port="22" sshConfigId="8e12c3ce-be19-4508-a99f-3c054f57a277" sshConfig="liuxinchi@192.168.232.101:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="65aac1b5-3d0a-411e-a5ca-f350c8b517cd" name="hp">
+        <fileTransfer accessType="SFTP" host="10.16.68.188" port="22" sshConfigId="a582160f-d706-4c5b-8b88-710252fa5cea" sshConfig="liuxinchi@10.16.68.188:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

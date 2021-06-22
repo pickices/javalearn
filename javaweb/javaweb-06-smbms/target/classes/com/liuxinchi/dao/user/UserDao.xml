@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuxinchi.dao.user.UserDao">
+    <select id="userLogin" resultType="user">
+        select * from smbms.smbms_user where userCode=#{userCode} and userPassword=#{userPassword}
+    </select>
+
+    <update id="userUpdatePassword">
+        update smbms.smbms_user set userPassword=#{userPassword} where userCode=#{userCode}
+    </update>
+
+    <select id="queryUsersCount" resultType="int">
+        select count(1) as count from smbms.smbms_user
+            <where>
+                <if test="userName!=null">
+                    userName like "%"#{userName}"%"
+                </if>
+                <if test="userRole!=0">
+                    and userRole=#{userRole}
+                </if>
+            </where>
+    </select>
+
+    <select id="queryUsersCountByCode" resultType="int">
+        select count(1) as count from smbms.smbms_user where userCode=#{userCode}
+    </select>
+
+    <select id="queryUsersCountById" resultType="int">
+        select count(1) as count from smbms.smbms_user where id=#{id}
+    </select>
+
+    <select id="queryUserById" parameterType="int" resultType="user">
+        select u.*,r.roleName as userRoleName from smbms.smbms_user u,smbms.smbms_role r
+        where u.id=#{id} and u.userRole=r.id
+    </select>
+
+    <select id="queryUsersList" resultType="user">
+        SELECT u.*,r.roleName as userRoleName FROM smbms.smbms_user u,smbms.smbms_role r WHERE u.userRole=r.id
+            <if test="userName!=null">
+                and u.userName like "%"#{userName}"%"
+            </if>
+            <if test="userRole!=0">
+                and u.userRole=#{userRole}
+            </if>
+        limit #{currentCount},#{pageSize}
+    </select>
+
+    <insert id="insertUser" parameterType="user">
+        insert into smbms.smbms_user(smbms.smbms_user.userCode, smbms.smbms_user.userName, smbms.smbms_user.userPassword, smbms.smbms_user.gender, smbms.smbms_user.birthday, smbms.smbms_user.phone, smbms.smbms_user.address, smbms.smbms_user.userRole, smbms.smbms_user.createdBy, smbms.smbms_user.creationDate)
+        values(#{userCode},#{userName},#{userPassword},#{gender},#{birthday},#{phone},#{address},#{userRole},#{createdBy},#{creationDate})
+    </insert>
+
+    <update id="updateUser" parameterType="user">
+        update smbms.smbms_user
+        set userName=#{userName},gender=#{gender},birthday=#{birthday},phone=#{phone},address=#{address},userRole=#{userRole},modifyBy=#{modifyBy},modifyDate=#{modifyDate}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int" >
+        delete from smbms.smbms_user where smbms.smbms_user.id=#{id}
+    </delete>
+
+</mapper>

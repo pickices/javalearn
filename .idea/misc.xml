@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/javalearn/javaweb/java-01-servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatislearn/mybatis-10/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatislearn/pom.xml" />
+        <option value="$PROJECT_DIR$/springlearn/pom.xml" />
+        <option value="$PROJECT_DIR$/Thread/pom.xml" />
+        <option value="$PROJECT_DIR$/leetcode/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb/javaweb-02-servletcomtext/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb/pom.xml" />
+        <option value="$PROJECT_DIR$/../SpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-01-hello/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-02-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-03-web/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-04-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-05-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-06-zookeeper_dobbo_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-06-zookeeper-dobbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/jvm/pom.xml" />
+        <option value="$PROJECT_DIR$/juc/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/javaweb/javaweb-03-session/pom.xml" />
+        <option value="$PROJECT_DIR$/juc/spurious wakeup/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
