@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="backend1" remoteFilesAllowedToDisappearOnAutoupload="false">
-    <serverData>
-      <paths name="backend1">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/ideaprojects" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="hp">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$/springlearn/spring-di" web="/" />
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
