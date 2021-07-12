@@ -1,0 +1,5 @@
+com\liuxinchi\dao\DeptMapper.class
+com\liuxinchi\DeptPrider_8001.class
+com\liuxinchi\controller\DeptController.class
+com\liuxinchi\service\DeptService.class
+com\liuxinchi\service\DeptServiceImpl.class

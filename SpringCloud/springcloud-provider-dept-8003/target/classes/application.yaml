@@ -1,0 +1,24 @@
+server:
+  port: 8003
+
+mybatis:
+  type-aliases-package: com.liuxinchi.pojo
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+
+spring:
+  application:
+    name: provider-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 592295lxc
+    url: jdbc:mysql://127.0.0.1:3307/db03?useSSL=false&userUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: provider-8003
